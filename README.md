@@ -139,8 +139,8 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 1. Create catalog.conf to edit: `sudo nano /etc/apache2/sites-available/catalog.conf`
 2. Add the following lines of code to the file to configure the virtual host. 
 	
-	```
-	<VirtualHost *:80>
+```
+<VirtualHost *:80>
     ServerName 18.221.244.17
     ServerAlias ec2-18-221-244-17.us-east-2.compute.amazonaws.com
     ServerAdmin karthic.psa@gmail.com
@@ -158,7 +158,7 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-	```
+```
 3. Enable the virtual host with the following command: `sudo a2ensite catalog` reload apache2 using `sudo service apache2 reload`
 
 ## Create the .wsgi File
@@ -170,8 +170,8 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 	```
 2. Add the following lines of code to the catalog.wsgi file:
 	
-	```
-	#!/usr/bin/python
+```
+#!/usr/bin/python
 import sys
 import logging
 
@@ -180,7 +180,7 @@ sys.path.insert(0,"/var/www/catalog/")
 
 from catalog import app as application
 application.secret_key = 'super_secret_key'
-	```
+```
 
 ## Restart Apache
 1. Restart Apache `sudo service apache2 restart`
