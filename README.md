@@ -184,7 +184,7 @@ application.secret_key = 'super_secret_key'
 
 ## Restart Apache
 1. Restart Apache `sudo service apache2 restart`
-2. 16. Run the app by using `sudo python __init__.py`
+2. Run the app by using `sudo python __init__.py`
 
 ## References:
 1. Udacity's Full Stack Web Developer course and forums
