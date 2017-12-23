@@ -187,6 +187,6 @@ application.secret_key = 'super_secret_key'
 2. Run the app by using `sudo python __init__.py`
 
 ## References:
-1. Udacity's Full Stack Web Developer course and forums
+1. Udacity's Full-Stack Web Developer course and forums
 2. https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 3. https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
