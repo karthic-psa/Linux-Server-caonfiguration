@@ -186,6 +186,8 @@ application.secret_key = 'super_secret_key'
 1. Restart Apache `sudo service apache2 restart`
 2. Run the app by using `sudo python __init__.py`
 
+**The Google Sign In button is not working on Google Chrome browser, so please use any other browser.**  
+
 ## References:
 1. Udacity's Full-Stack Web Developer course and forums
 2. https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
